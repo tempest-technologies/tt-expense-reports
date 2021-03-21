@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-size: 62.5%;
+}
+
+h1 {
+  margin: 15px;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 1.1em;
+}
+
+.summary {
+  font-weight: bolder;
+}
+
+.main-section {
+  margin-bottom: 20px;
+}
+
+.main-section span {
+  color: red;
+}
+
+h1,
+.main-section {
+  text-align: center;
+}
+
+.main-section h2 {
+  text-align: left;
+  padding-left: 5px
+}
+
+.flex-section {
+  display: flex;
+  border: 1px solid black;
+  border-bottom: none;
+}
+
+.flex-section:last-child {
+  border-bottom: 1px solid black;
+}
+.flex-section > section:first-child, .flex-section.receipt-summary > section:nth-child(2) {
+  width: 50%;
+  border-right: 1px solid black;
+}
+
+.flex-section > section {
+  text-align: left;
+  padding: 5px;
+}
+
+.main-section:last-child > section {
+  display: flex;
+}
+
+.main-section:last-child > section > section {
+  width: 40%;
+  padding-top: 5px;
+}
+
+.main-section:last-child > section > section:last-child {
+  padding-top: 0;
+  width: 25%;
+}
+
+.summary > section:first-child {
+  text-align: left;
+}
+
+.main-section > .summary > section:first-child, .main-section > .summary > section:nth-child(2) {
+  font-size: 1.4em;
+  padding-left: 5px;
+  margin-top: 5px;
+}
+
+.main-section > .summary > section:nth-child(2) {
+  font-size: 1.2em;
+}
+
+@page {
+  size: auto;
+  margin: 0;
+}
